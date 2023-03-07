@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {Link} from 'react-router-dom';
 import {useInfQueryPokemons} from '../queries/Pokemons';
 
 function Home() {
@@ -11,7 +12,12 @@ function Home() {
 	console.log(isPreviousData);
 	return (
 		<div className='m-10'>
-			<div>asd</div>
+			{pokemons?.map(({name, id}) => (
+				<Link to={`/${name}`} key={id}>
+					<div>{name}</div>
+				</Link>
+			))}
+			<button onClick={async () => fetchNextPage()}>load more</button>
 		</div>
 	);
 }

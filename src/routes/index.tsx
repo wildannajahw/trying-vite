@@ -1,3 +1,4 @@
+/* eslint-disable new-cap */
 import {lazy, Suspense, type ElementType} from 'react';
 import {Navigate, useLocation, useRoutes} from 'react-router-dom';
 import MainLayout from '../layouts/main';
@@ -21,6 +22,7 @@ export default function Router() {
 			element: <MainLayout />,
 			children: [
 				{element: <HomePage />, index: true},
+				{path: ':name', element: <PokeDetails />},
 				// {path: 'about-us', element: <About />},
 				// {path: 'contact-us', element: <Contact />},
 				// {path: 'faqs', element: <Faqs />},
@@ -30,5 +32,5 @@ export default function Router() {
 	]);
 }
 
-// eslint-disable-next-line new-cap
 const HomePage = Loadable(lazy(async () => import('../Pages/Home')));
+const PokeDetails = Loadable(lazy(async () => import('../Pages/PokeDetails')));
