@@ -6,8 +6,11 @@ function Home() {
 	const [filter, setFilter] = useState(initialState);
 	const {data, isFetching, isFetchingNextPage, isPreviousData, fetchNextPage} =
 		useInfQueryPokemons(filter);
+
+	const pokemons = data?.pages.flat();
+	console.log(isPreviousData);
 	return (
-		<div>
+		<div className='m-10'>
 			<div>asd</div>
 		</div>
 	);
