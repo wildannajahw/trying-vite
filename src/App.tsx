@@ -1,4 +1,5 @@
 import {QueryClientProvider} from '@tanstack/react-query';
+import Router from './routes';
 import getQueryClient from './utils/getQueryClient';
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
 	return (
 		<QueryClientProvider client={queryClient}>
 			<div className='App'>
-				<h1 className='text-3xl font-bold underline'>Hello world!</h1>
+				<Router />
 			</div>
 		</QueryClientProvider>
 	);

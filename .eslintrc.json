@@ -10,7 +10,8 @@
 			"files": ["*.ts", "*.tsx"],
 			"rules": {
 				"no-unused-vars": "warn",
-				"no-console": "warn"
+				"no-console": "warn",
+				"operator-linebreak": "off"
 			}
 		}
 	],
