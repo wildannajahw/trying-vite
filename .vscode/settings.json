@@ -1,0 +1,39 @@
+{
+	"files.eol": "\n",
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact"
+	},
+
+	// JS/TS
+	"javascript.preferences.quoteStyle": "single",
+	"typescript.preferences.quoteStyle": "single",
+	"javascript.preferences.importModuleSpecifier": "shortest",
+	"typescript.preferences.importModuleSpecifier": "shortest",
+	"[javascript]": {
+		"editor.tabSize": 2,
+		"editor.rulers": [100],
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": true
+		}
+	},
+	"[typescript]": {
+		"editor.tabSize": 2,
+		"editor.rulers": [100],
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": true
+		}
+	},
+	"[typescriptreact]": {
+		"editor.tabSize": 2,
+		"editor.rulers": [100],
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": true
+		}
+	},
+
+	// CSS
+	"files.associations": {
+		"*.css": "scss"
+	},
+	"scss.validate": false
+}
